@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $1 == "install" ]; then
+
+	true
+
+fi
+
+if [ $1 == "upgrade" ]; then
+
+	true
+
+fi
+

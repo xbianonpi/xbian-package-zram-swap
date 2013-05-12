@@ -1,0 +1,12 @@
+Origin: XBian
+Package: xbian-zram-swap
+Version: 1.0
+Section: base
+Essential: No
+Priority: optional
+Codename: wheezy
+Depends: upstart, xbian-package-kernel
+Architecture: armhf
+Installed-Size: 2320
+Maintainer: mk01 <development@xbian.org>
+Description: zram-swap custom xbian package
