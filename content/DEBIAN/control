@@ -1,5 +1,5 @@
 Origin: XBian
-Package: xbian-zram-swap
+Package: xbian-package-zram-swap
 Version: 1.0
 Section: base
 Essential: No
