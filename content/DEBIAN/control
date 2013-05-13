@@ -4,7 +4,6 @@ Version: 1.0
 Section: base
 Essential: No
 Priority: optional
-Codename: wheezy
 Depends: upstart, xbian-package-kernel
 Architecture: armhf
 Installed-Size: 2320
