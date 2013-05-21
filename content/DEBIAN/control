@@ -8,4 +8,3 @@ Depends: upstart, xbian-package-kernel
 Architecture: armhf
 Maintainer: mk01 <development@xbian.org>
 Description: zram-swap custom xbian package
-Installed-Size: 52
