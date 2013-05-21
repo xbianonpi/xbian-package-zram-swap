@@ -6,6 +6,6 @@ Essential: No
 Priority: optional
 Depends: upstart, xbian-package-kernel
 Architecture: armhf
-Installed-Size: 2320
 Maintainer: mk01 <development@xbian.org>
 Description: zram-swap custom xbian package
+Installed-Size: 52
