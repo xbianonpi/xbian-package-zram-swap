@@ -1,10 +1,11 @@
 Origin: XBian
 Package: xbian-package-zram-swap
-Version: 1.0-3.2
+Version: 1.0-3.3
 Section: base
 Essential: No
 Priority: optional
 Depends: upstart, xbian-package-kernel
 Architecture: armhf
+Breaks: xbian-package-usbmount (<<1.0-0.7)
 Maintainer: mk01 <development@xbian.org>
 Description: zram-swap custom xbian package
