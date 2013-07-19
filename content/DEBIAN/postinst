@@ -2,7 +2,12 @@
 
 if [ $1 == "configure" ]; then
 
-	true
+    dpkg-trigger --no-await trigger-xbian-package-zram-swap
 
+elif [ $1 = triggered ]; then
+
+    stop zram-swap || :
+    start zram-swap  || :
 fi
+
 
