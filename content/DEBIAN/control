@@ -1,6 +1,6 @@
 Origin: XBian
 Package: xbian-package-zram-swap
-Version: 1.0-3.4
+Version: 1.0-3.5
 Section: base
 Essential: No
 Priority: optional
