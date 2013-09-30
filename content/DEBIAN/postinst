@@ -6,8 +6,8 @@ if [ $1 == "configure" ]; then
 
 elif [ $1 = triggered ]; then
 
-    stop zram-swap || :
-    start zram-swap  || :
+    stop -q zram-swap || :
+    start -q zram-swap  || :
 fi
 
 
