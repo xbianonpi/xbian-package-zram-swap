@@ -7,7 +7,7 @@ if [ $1 == "configure" ]; then
 elif [ $1 = triggered ]; then
 
     stop -q zram-swap || :
-    start -q zram-swap  || :
+    start -q zram-swap DPKG=yes || :
 fi
 
 
