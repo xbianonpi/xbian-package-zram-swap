@@ -2,12 +2,23 @@
 
 if [ $1 == "configure" ]; then
 
-    dpkg-trigger --no-await trigger-xbian-package-zram-swap
+    if ! grep -qw SWAPNOUSE /etc/default/zram-swap; then
+        echo "
+# don't use these swappartitions
+SWAPNOUSE='/dev/sda21,/dev/mmcblk0p99'
+" >> /etc/default/zram-swap 
+    fi
+
+#    dpkg-trigger --no-await trigger-xbian-package-zram-swap
+
+    touch /run/reboot-required
 
 elif [ $1 = triggered ]; then
 
-    stop -q zram-swap || :
-    start -q zram-swap DPKG=yes || :
+    :
+#    stop -q zram-swap 2>/dev/null|| :
+#    start -q zram-swap DPKG=yes 2>/dev/null|| :
+
 fi
 
-
+exit 0
