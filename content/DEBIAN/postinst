@@ -11,7 +11,7 @@ SWAPNOUSE='/dev/sda21,/dev/mmcblk0p99'
 
 #    dpkg-trigger --no-await trigger-xbian-package-zram-swap
 
-    touch /run/reboot-required
+    echo "xbian-package-zram-swap" >>  /run/reboot-required
 
 elif [ $1 = triggered ]; then
 
